@@ -147,7 +147,7 @@ $(document).ready(function(){
             type: 'POST',
             data: {
                 _token: '{{ csrf_token() }}',
-                _method: id ? 'PUT' : 'POST',
+                _method: id ? 'POST',
                 category_id: $('#category_id').val(),
                 name: $('#name').val(),
                 sku: $('#sku').val(),

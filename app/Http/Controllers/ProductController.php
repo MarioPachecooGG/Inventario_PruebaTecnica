@@ -28,7 +28,7 @@ class ProductController extends Controller
             'price' => 'required|numeric|min:0'
         ]);
 
-        $product = Product::create($request->all());
+        $product = Product::create($request);
 
         return response()->json([
             'status' => true,
